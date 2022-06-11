@@ -1,3 +1,8 @@
+/*!
+ * Hux Blog v1.8.2 (http://huxpro.github.io)
+ * Copyright 2022 Hux <huxpro@gmail.com>
+ */
+
 @media (min-width: 1200px) {
   .post-container,
   .sidebar-container {
@@ -26,14 +31,14 @@
 }
 .sidebar-container a:hover,
 .sidebar-container a:active {
-  color: #0085a1 !important;
+  color: #609AC0 !important;
 }
 .sidebar-container .tags a {
   border-color: #bfbfbf;
 }
 .sidebar-container .tags a:hover,
 .sidebar-container .tags a:active {
-  border-color: #0085a1;
+  border-color: #609AC0;
 }
 .sidebar-container .short-about img {
   width: 80%;
@@ -214,7 +219,7 @@
   width: 160px;
   overflow: hidden;
   user-select: none;
-  color: #000000;
+  color: #000;
   text-transform: uppercase;
   border-radius: 3px;
   outline-color: #a3a3a3;
@@ -231,7 +236,7 @@
   height: 100%;
   /*font-family: 'Roboto';*/
   font-size: 1em;
-  color: #000000;
+  color: #000;
   text-transform: uppercase;
 }
 .paper-button.colored,
@@ -264,13 +269,13 @@ button.paper-button {
   /*font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;*/
   font-size: 1em;
   line-height: 25px;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 .paper-button input[type="submit"] {
   outline-color: #a3a3a3;
 }
 .paper-button.colored.raised-button input[type="submit"] {
-  color: #ffffff;
+  color: #fff;
 }
 /** Shadows **/
 .paper-shadow-animated.paper-shadow {
@@ -696,7 +701,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #0085a1;
+  color: #609AC0;
 }
 a img:hover,
 a img:focus {
@@ -781,7 +786,7 @@ samp {
 }
 .post-container a:hover,
 .post-container a:focus {
-  color: #0085a1;
+  color: #609AC0;
 }
 .post-container h1,
 .post-container h2,
@@ -1045,14 +1050,14 @@ samp {
 }
 .navbar-custom.invert .navbar-brand:hover,
 .navbar-custom.invert .navbar-brand:focus {
-  color: #0085a1;
+  color: #609AC0;
 }
 .navbar-custom.invert .nav li a {
   color: #404040;
 }
 .navbar-custom.invert .nav li a:hover,
 .navbar-custom.invert .nav li a:focus {
-  color: #0085a1;
+  color: #609AC0;
 }
 @media only screen and (min-width: 1170px) {
   .navbar-custom {
@@ -1083,14 +1088,14 @@ samp {
   }
   .navbar-custom.is-fixed .navbar-brand:hover,
   .navbar-custom.is-fixed .navbar-brand:focus {
-    color: #0085a1;
+    color: #609AC0;
   }
   .navbar-custom.is-fixed .nav li a {
     color: #404040;
   }
   .navbar-custom.is-fixed .nav li a:hover,
   .navbar-custom.is-fixed .nav li a:focus {
-    color: #0085a1;
+    color: #609AC0;
   }
   .navbar-custom.is-visible {
     /* if the user changes the scrolling direction, we show the header */
@@ -1260,7 +1265,7 @@ samp {
 .post-preview > a:hover,
 .post-preview > a:focus {
   text-decoration: none;
-  color: #0085a1;
+  color: #609AC0;
 }
 .post-preview > a > .post-title {
   font-size: 21px;
@@ -1288,7 +1293,7 @@ samp {
 }
 .post-preview > .post-meta > a:hover,
 .post-preview > .post-meta > a:focus {
-  color: #0085a1;
+  color: #609AC0;
   text-decoration: underline;
 }
 @media only screen and (min-width: 768px) {
@@ -1310,7 +1315,7 @@ samp {
   color: #a3a3a3;
 }
 .post-content-preview:hover {
-  color: #0085a1;
+  color: #609AC0;
 }
 @media only screen and (min-width: 768px) {
   .post-content-preview {
@@ -1350,7 +1355,7 @@ footer .copyright a {
 }
 footer .copyright a:hover,
 footer .copyright a:focus {
-  color: #0085a1;
+  color: #609AC0;
 }
 .btn {
   /* Hux learn from
@@ -1372,8 +1377,8 @@ footer .copyright a:focus {
 }
 .btn-default:hover,
 .btn-default:focus {
-  background-color: #0085a1;
-  border: 1px solid #0085a1;
+  background-color: #609AC0;
+  border: 1px solid #609AC0;
   color: white;
 }
 .pager {
@@ -1409,8 +1414,8 @@ footer .copyright a:focus {
 .pager li > a:hover,
 .pager li > a:focus {
   color: white;
-  background-color: #0085a1;
-  border: 1px solid #0085a1;
+  background-color: #609AC0;
+  border: 1px solid #609AC0;
 }
 .pager li > a:hover > span,
 .pager li > a:focus > span {
@@ -1427,12 +1432,12 @@ footer .copyright a:focus {
 ::-moz-selection {
   color: white;
   text-shadow: none;
-  background: #0085a1;
+  background: #609AC0;
 }
 ::selection {
   color: white;
   text-shadow: none;
-  background: #0085a1;
+  background: #609AC0;
 }
 img::selection {
   color: white;
