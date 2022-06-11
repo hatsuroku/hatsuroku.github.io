@@ -1221,7 +1221,12 @@ samp {
   margin-top: -5px;
 }
 .intro-header .post-heading .meta {
-  font-family: 'Lora', 'Times New Roman', serif;
+  /* Hux learn from
+     *     TypeIsBeautiful,
+     *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
+     */
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  line-height: 1.7;
   font-style: italic;
   font-weight: 300;
   font-size: 16px;
@@ -1281,10 +1286,13 @@ samp {
   margin-bottom: 10px;
 }
 .post-preview > .post-meta {
-  font-family: 'Lora', 'Times New Roman', serif;
+  /* Hux learn from
+     *     TypeIsBeautiful,
+     *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
+     */
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  line-height: 1.7;
   color: #a3a3a3;
-  font-size: 16px;
-  font-style: italic;
   margin-top: 0;
 }
 .post-preview > .post-meta > a {
@@ -1303,15 +1311,15 @@ samp {
     margin-bottom: 10px;
   }
   .post-preview > a > .post-subtitle {
-    font-size: 16px;
+    font-size: 13px;
   }
   .post-preview .post-meta {
-    font-size: 18px;
+    font-size: 13px;
   }
 }
 .post-content-preview {
+  margin-bottom: 15px;
   font-size: 13px;
-  font-style: italic;
   color: #a3a3a3;
 }
 .post-content-preview:hover {
