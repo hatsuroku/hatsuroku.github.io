@@ -12,10 +12,10 @@ baseurl: ""                             # for example, '/blog' if your blog host
 future: true
 
 # SNS settings
-RSS: false
+RSS: true
 # weibo_username:     huxpro
 # zhihu_username:     huxpro
-# github_username:    huxpro
+github_username:    hatsuroku
 # twitter_username:   huxpro
 #facebook_username:  huxpro
 #linkedin_username:  firstname-lastname-idxxxx
@@ -62,6 +62,9 @@ kramdown:
 
 # Netease settings
 netease_comment: false
+
+# Beaudar settings
+beaudar: true
 
 
 
