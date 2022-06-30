@@ -9,6 +9,16 @@ tags:
   - "Rust"
 ---
 
+# Rust 学习笔记
+
+推荐：[Rust 语言圣经](https://course.rs/)
+
+对中文母语者友好，语言幽默，章节安排合理。
+
+我就看这个学的。
+
+
+
 ## Rust 的「所有权」
 
 ### 赋值等号
@@ -111,4 +121,30 @@ println!("{} and {}", r1, r2);
 let r3 = &mut s; // 没问题
 println!("{}", r3);
 ```
+
+
+
+#### for 循环中的 ＆ 的意思
+
+其实是解构赋值：https://stackoverflow.com/questions/57339201/what-is-the-purpose-of-before-the-loop-variable
+
+```rust
+fn largest(list: &[i32]) -> i32 {
+    println!("{:?}", list);
+    let mut largest = list[0];
+    // list 的类型是 &[i32]
+    
+    // for loop 里的第一次循环可以理解为 let &i = list[0]
+    // list[0] 的类型是 &i32
+    // 所以 i 的类型为 i32（被解构）
+    for &i in list {
+        if i > largest {
+            largest = i;
+        }
+    }
+    largest
+}
+```
+
+
 
