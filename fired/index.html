@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <title>我被炒啦！</title>
+</head>
+<body>
+    <div class="banner_mc">
+        <video src="./bg_video.mp4" height="680" muted autoplay loop></video>
+        <div class="content">
+            <h2 class="title">被</h2>
+            <h1 class="logo">xxxx</h1>
+            <h2 class="title">炒鱿鱼已经</h2>
+            <h2 class="title" id="time_content">……</h2>
+        </div>
+    </div>
+    <div class="top_mc">
+        <div class="top_bg"></div>
+    </div>
+</body>
+
+<style>
+    :root,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    * {
+        box-sizing: inherit;
+    }
+
+    html, body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .banner_mc {
+        position: absolute;
+        top: 0;
+        overflow: hidden;
+    }
+
+    .banner_mc h1,
+    .banner_mc h2 {
+        margin: 0 auto;
+        width: 950px;
+    }
+
+    .banner_mc .content {
+        position: absolute;
+        top: 195px;
+        left: 0;
+        right: 0;
+    }
+
+    .banner_mc .content * + * {
+        margin-top: 10px;
+    }
+
+    @font-face {
+        font-family: 'SourceHanSansCN-Heavy';
+        src: url('./Source Han Sans CN Heavy.otf');
+    }
+
+    .banner_mc .title {
+        font-size: 60px;
+        font-weight: bolder;
+        font-family: 'SourceHanSansCN-Heavy', 'Noto Sans', 'Ping Fang', sans-serif;
+        line-height: 60px;
+        color: #fff;
+    }
+
+    .banner_mc .logo {
+        text-indent: -9999px;
+        height: 76px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(./logo_white_mosaic.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .top_mc {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 60px;
+        background: white;
+    }
+
+    .top_bg {
+        position: absolute;
+        width: 147px;
+        height: 41px;
+        top: 9px;
+        left: 10px;
+        background-image: url(./logo_mosaic.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+</style>
+<script src="https://cdn.bootcdn.net/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
+<script>
+
+function intervalToTime(beginTime, endTime) {
+    let interval = endTime - beginTime;
+    let units = [
+        {name: '天', value: 86400000},
+        {name: '小时', value: 3600000},
+        {name: '分钟', value: 60000},
+        {name: '秒', value: 1000},
+    ];
+    let ret = [];
+    for (let unit of units) {
+        let value = Math.floor(interval / unit.value);
+        interval %= unit.value;
+        ret.push(`${value} ${unit.name}`);
+    }
+    return ret.join(' ');
+}
+
+function updateTime() {
+    $("#time_content").each(function(index) {
+        this.innerText = intervalToTime(new Date('July 05, 2022 10:30:00'), Date.now());
+    });
+}
+
+(function() {
+    updateTime();
+    setInterval(updateTime, 1000);
+})();
+</script>
+</html>
