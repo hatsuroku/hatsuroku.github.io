@@ -104,11 +104,8 @@ page-mathjax: false
 
 # Friends
 friends: [
-    {
+    # {
     #     title: "Su",
     #     href: "http://su.gallery/"
-    # },{
-        title: "大本营",
-        href: "https://kazamihatsuroku.top/"
-    }
+    # },
 ]
